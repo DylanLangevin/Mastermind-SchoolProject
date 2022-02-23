@@ -1,0 +1,292 @@
+:root {
+    --red-btn-color :rgb(248, 110, 110);
+    --blue-btn-color :rgb(110, 110, 248);
+    --green-btn-color :rgb(110, 248, 110);
+    --yellow-btn-color :rgb(245, 245, 118);
+    --orange-btn-color :rgb(245, 160, 2);
+}
+
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+body {
+    background: linear-gradient(to right bottom,
+    rgba(58, 51, 51, 0.487),
+    rgba(85, 76, 76, 0.412));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+
+button {
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+#board-game {
+    width: 40%;
+    height: 90%;
+    border: 1px black solid;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(70, 66, 66);
+    /* border: 2px white solid; */
+}
+
+#game-field{
+    flex-basis: 90%;
+
+    background-color: transparent;
+    display: flex;
+    /* border: 2px white solid; */
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+}
+
+#color-zone {
+    flex-basis: 90%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.color-zone-line {
+    height:10%;
+    border-bottom: 1px rgba(0, 0, 0, 0.33) solid;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.colors {
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    background-color: transparent;
+    border:1px solid rgba(0, 0, 0, 0.487);
+}
+
+#indice-zone {
+    flex-basis: 10%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column-reverse;
+    border-top-right-radius: 20px;
+}
+
+#color-picking-zone{
+    flex-basis: 10%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #1a1a1a60;
+    border-top: 2px black solid;
+}
+
+#color-picking-zone button:hover {
+    
+    transition:0.1s;
+    box-shadow:  -2px -2px 3px rgb(32, 32, 32);
+    opacity:0.7;
+}
+
+#red-btn{
+    background-color: var(--red-btn-color);
+    box-shadow: inset -3px -3px 7px #ffffff33,  2px 2px 10px rgba(5, 1, 1,0.80);
+}
+#blue-btn{
+    background-color: var(--blue-btn-color);
+    box-shadow: inset -3px -3px 7px #ffffff33,   2px 2px 10px rgba(5, 1, 1,0.80);
+}
+#green-btn{
+    background-color: var(--green-btn-color);
+    box-shadow: inset -3px -3px 7px #ffffff33,   2px 2px 10px rgba(5, 1, 1,0.80);
+}
+#yellow-btn{
+    background-color: var(--yellow-btn-color);
+    box-shadow: inset -3px -3px 7px #ffffff33,   2px 2px 10px rgba(5, 1, 1,0.80);
+}
+#orange-btn{
+    background-color: var(--orange-btn-color);
+    box-shadow: inset -3px -3px 7px #ffffff33,   2px 2px 10px rgba(5, 1, 1,0.80);
+}
+#reset-btn {
+    background-color: black;
+    color: white;
+    box-shadow: inset -3px -3px 7px #ffffff33,   2px 2px 10px rgba(5, 1, 1,0.80);
+}
+
+
+.color-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+}
+
+
+
+.r{ 
+    background-color: var(--red-btn-color);
+}
+.b{
+    background-color: var(--blue-btn-color);
+}
+.v{
+    background-color: var(--green-btn-color)
+}
+.j{
+    background-color: var(--yellow-btn-color);
+}
+.o{
+    background-color: var(--orange-btn-color);
+}
+
+
+
+.indice-zone-line {
+    height:10%;
+    border-bottom: 1px rgba(0, 0, 0, 0.33) solid;
+    background-color: transparent;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+
+}
+
+.indice {
+    width: 15px;
+    height: 15px;
+    border-radius: 100px;
+    margin: auto;
+    border:1px solid rgba(0, 0, 0, 0.487);
+    background-color: rgb(70, 66, 66);
+}
+
+#under-game-section {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    background-color: transparent;
+}
+
+#validate-btn
+{
+    width: 40%;
+    height: 50px;
+    border-radius: 10px;
+    background: linear-gradient(to right bottom,
+    rgba(255, 255, 255, 0.9),
+    rgba(255, 255, 255, 0.5));
+    font-size: 1.2rem;
+}
+
+#refresh-btn
+{
+    width: 30%;
+    height: 50px;
+    border-radius: 10px;
+    background: linear-gradient(to right bottom,
+    rgba(255, 255, 255, 0.9),
+    rgba(255, 255, 255, 0.5));
+    font-size: 1.2rem;
+
+}
+
+
+#refresh-btn:hover
+{
+    color:red;
+    background-color: rgb(206, 204, 204);
+
+}
+
+#validate-btn:hover 
+{
+    width:40%;
+    /* box-shadow: -1px -1px 1px black; */
+    background-color: rgb(206, 204, 204);
+    color: rgb(9, 199, 9);
+}
+
+#round-circle 
+{
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    background: linear-gradient(to right bottom,
+    rgba(255, 255, 255, 0.9),
+    rgba(255, 255, 255, 0.5));
+    text-align: center;
+    font-size: 2.3rem;
+}
+
+
+
+/* ---------------MEDIA QUERIES------------ */
+
+@media only screen and (max-width:1100px){
+    #board-game {
+        width: 50%;
+
+
+    }
+    #under-game-section {
+        width: 50%;
+
+    }
+}
+
+
+@media only screen and (max-width:850px){
+    #board-game {
+        width: 60%;
+        height: 90%;
+
+
+    }
+    #under-game-section {
+        width: 60%;
+
+    }
+}
+@media only screen and (max-width:550px){
+    #board-game {
+        width: 100%;
+        height: 100%;
+
+  
+    }
+    #under-game-section {
+        width: 100%;
+
+    }
+}
+
+@media only screen and (min-width:1900px) {
+    .colors, .color-btn {
+        width: 70px;
+        height: 70px;
+    }
+    .indice {
+        width: 20px;
+        height: 20px;
+    }
+    
+}
