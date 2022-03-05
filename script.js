@@ -141,7 +141,7 @@ function showResult(win,text) {
 
 
         let seqOrdi = document.createElement("div")
-        seqOrdi.style.width="70%"
+        seqOrdi.style.width="100%"
         seqOrdi.style.height= "60px"
         seqOrdi.style.display = "flex"
         seqOrdi.style.justifyContent = "space-around"
@@ -175,7 +175,7 @@ orangeButton.onclick = function(){setColor('o',r);};
 
 // Vide le tableau au click du bouton reset
 resetButton.addEventListener('click', () => {
-    console.log("reset");
+
     userArray = []
 
     for(boule=1;boule<5;boule++) {

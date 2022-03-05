@@ -266,18 +266,28 @@ button {
 
     }
 }
-@media only screen and (max-width:550px){
+
+
+/* -------------------------- mobile ------------------------------------- */
+
+@media only screen and (max-width:480px){
     #board-game {
         width: 100%;
         height: 100%;
-
+        border-radius:0px;
   
     }
+
     #under-game-section {
         width: 100%;
 
     }
+    #refresh-btn, #validate-btn {
+        border-radius: 0px;
+    }
 }
+
+/* Wide screen */
 
 @media only screen and (min-width:1900px) {
     .colors, .color-btn {
