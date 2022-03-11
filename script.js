@@ -14,6 +14,7 @@ const resetButton = document.getElementById("reset-btn")
 const vldBtn = document.getElementById('validate-btn')
 const refreshBtn = document.getElementById('refresh-btn')
 const roundNumber = document.getElementById('round-circle')
+const rulesHover = document.getElementById('rules-div')
 
 let userArray = []
 let r = 1
@@ -235,4 +236,16 @@ refreshBtn.onclick = function() {
 const colorsSelectedList = randomColorsGenerator(colorsList.length, colorsList)
 
 document.querySelector(`#line-${r}`).style.border = "1px grey solid" 
-document.querySelector(`#line-${r}`).style.borderRadius = "20px" 
+document.querySelector(`#line-${r}`).style.borderTopRightRadius = "20px" 
+document.querySelector(`#line-${r}`).style.borderBottomRightRadius = "20px" 
+document.querySelector(`#line-${r}`).style.transition = "0.3s" 
+
+resetButton.addEventListener("mouseover", function() {
+    document.querySelector(`#line-${r}`).style.background = "rgba(192, 73, 73, 0.3)";
+
+});
+resetButton.addEventListener("mouseout", function() {
+    document.querySelector(`#line-${r}`).style.background = "";
+
+});
+
