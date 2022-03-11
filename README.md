@@ -4,7 +4,8 @@ In my first year at HETIC, my Front-End teacher challenged us to do a Mastermind
 
 Test it ! -----> https://dylanlangevin.github.io/Mastermind-SchoolProject/
 
-![Capture d’écran 2022-03-11 182704](https://user-images.githubusercontent.com/77147936/157917301-c4f2176a-f3e0-43c9-8818-ec8fe0011f98.png)
+![Capture d’écran 2022-03-11 182704](https://user-images.githubusercontent.com/77147936/157917736-afe47fe0-3ac0-450c-9c6e-322c7c191760.png)
+
 
 
 
