@@ -67,16 +67,65 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
+    
+}
+
+#rules-div span {
+    display: none;
+    margin: 10px;
+    padding: 10px;
+    font-size: 1.5rem;
+    width: 100%;
+    height: 100%;
+    
  
 }
+
 
 #rules-div:hover {
 
     cursor: pointer;
     transition:0.1s;
     box-shadow:  -2px -2px 3px rgb(32, 32, 32);
-    opacity:0.7;
- 
+    background-color: rgba(67, 27, 27,0.90);
+    position: absolute;
+    width: 30%;
+    height: max-content;
+    justify-content: flex-start; 
+    align-items: flex-start;
+    animation: div;
+    animation-duration: 1s ;
+}
+
+#rules-div:hover span{
+    display: inline-block;
+    animation: text;
+    animation-duration: 1.2s;
+    
+}
+
+#rules-div:hover p{
+    display: none;
+    
+}
+
+@keyframes text {
+    0% {opacity: 0;}
+    50%{opacity:0;}
+    100%{opacity:1;}
+}
+
+@keyframes div {
+
+    0% {
+        width: 10%;
+        
+    }
+
+    
+    100% {
+        width: 30%;
+    }
 }
 
 #round-circle 

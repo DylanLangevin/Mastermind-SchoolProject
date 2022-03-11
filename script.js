@@ -200,6 +200,7 @@ vldBtn.onclick = function() {
             refreshBtn.fontSize='2rem'
             vldBtn.style.width='0'
             vldBtn.textContent=''
+            vldBtn.border="0px"
             vldBtn.style.transition = '0.5s'
         } else {
 
@@ -218,10 +219,13 @@ vldBtn.onclick = function() {
                 refreshBtn.fontSize='2rem'
                 vldBtn.style.width='0'
                 vldBtn.textContent=''
+                
+                vldBtn.border="0px"
                 vldBtn.style.transition = '0.5s'
             }
             document.querySelector(`#line-${r}`).style.border = "1px grey solid" 
-            document.querySelector(`#line-${r}`).style.borderRadius = "20px" 
+            document.querySelector(`#line-${r}`).style.borderTopRightRadius = "20px" 
+            document.querySelector(`#line-${r}`).style.borderBottomRightRadius = "20px"
             document.querySelector(`#line-${r-1}`).style.border = "0px" 
             return r
         }
@@ -244,6 +248,8 @@ resetButton.addEventListener("mouseover", function() {
     document.querySelector(`#line-${r}`).style.background = "rgba(192, 73, 73, 0.3)";
 
 });
+
+
 resetButton.addEventListener("mouseout", function() {
     document.querySelector(`#line-${r}`).style.background = "";
 
