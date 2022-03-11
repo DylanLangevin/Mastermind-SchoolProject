@@ -27,14 +27,16 @@ The player has to guess a random combination of four colours among red, blue, gr
 
 
 
-![Capture d’écran 2022-03-11 182758](https://user-images.githubusercontent.com/77147936/157917314-a72909da-ca34-4e97-b07e-de548e5f5446.png)
+![Capture d’écran 2022-03-11 182758](https://user-images.githubusercontent.com/77147936/157917945-10c39a23-dc05-4a5a-accb-54a36d5f31f6.png)
+
 
 
 
 In this example, the player has one colour at the right place, two colours at the wrong place, and one colour that doesn't exist in the computer sequence.
 
 
-![Capture d’écran 2022-03-11 182845](https://user-images.githubusercontent.com/77147936/157917344-ec0d3a69-7064-4324-9634-4151aa04e438.png)
+![Capture d’écran 2022-03-11 182845](https://user-images.githubusercontent.com/77147936/157917985-e6e59c49-d968-476e-a92d-76b332ac9e06.png)
+
 
 
 
