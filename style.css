@@ -17,9 +17,7 @@
 
 
 body {
-    background: linear-gradient(to right bottom,
-    rgba(51, 52, 58, 0.487),
-    rgba(85, 76, 76, 0.412));
+    background: rgb(29, 28, 28);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -36,14 +34,16 @@ button {
 }
 
 #board-game {
-    width: 40%;
-    height: 90%;
-    border: 1px black solid;
-    border-radius: 20px;
+    
+    width: 30%;
+    height: 80%;
+    border-radius: 30px;
     display: flex;
     flex-direction: column;
-    background-color: rgb(70, 66, 66);
-    /* border: 2px white solid; */
+
+    box-shadow:  0px 0px 20px 0px #2c2c2c;
+    border: 4px solid rgba(166, 166, 174, 0.9);
+
 }
 
 #game-field{
@@ -66,7 +66,7 @@ button {
 
 .color-zone-line {
     height:10%;
-    border-bottom: 1px rgba(0, 0, 0, 0.33) solid;
+    border-bottom: 1px rgba(19, 18, 18, 0.33) solid;
     background-color: transparent;
     display: flex;
     justify-content: space-around;
@@ -77,8 +77,7 @@ button {
     width: 50px;
     height: 50px;
     border-radius: 100px;
-    background-color: transparent;
-    border:1px solid rgba(0, 0, 0, 0.487);
+    border: 3px solid rgba(166, 166, 174, 0.9);
 }
 
 #indice-zone {
@@ -128,9 +127,11 @@ button {
     box-shadow: inset -3px -3px 7px #ffffff33,   2px 2px 10px rgba(5, 1, 1,0.80);
 }
 #reset-btn {
-    background-color: black;
+    
+    border: 2px solid rgba(166, 166, 174, 0.9);
     color: white;
     box-shadow: inset -3px -3px 7px #ffffff33,   2px 2px 10px rgba(5, 1, 1,0.80);
+    font-size: 1.3  rem;
 }
 
 
@@ -161,7 +162,7 @@ button {
 
 
 .indice-zone-line {
-    height:10%;
+    height:20%;
     border-bottom: 1px rgba(0, 0, 0, 0.33) solid;
     background-color: transparent;
     display: grid;
@@ -175,12 +176,12 @@ button {
     height: 15px;
     border-radius: 100px;
     margin: auto;
-    border:1px solid rgba(0, 0, 0, 0.487);
-    background-color: rgb(70, 66, 66);
+    border: 1px solid rgba(166, 166, 174, 0.9);
+
 }
 
 #under-game-section {
-    width: 40%;
+    width: 30%;
     display: flex;
     justify-content: space-between;
     background-color: transparent;
@@ -188,41 +189,46 @@ button {
 
 #validate-btn
 {
-    width: 40%;
+    width:  50%;
     height: 50px;
-    border-radius: 10px;
-    background: linear-gradient(to right bottom,
-    rgba(255, 255, 255, 0.9),
-    rgba(255, 255, 255, 0.5));
+    border-radius: 30px;
+    border: 4px solid rgba(166, 166, 174, 0.9);
     font-size: 1.2rem;
+    color: white;
+}
+#tick {
+    width: 30px;
+    height: 30px;
+    
 }
 
 #refresh-btn
 {
-    width: 30%;
+    width: 50%;
     height: 50px;
-    border-radius: 10px;
-    background: linear-gradient(to right bottom,
-    rgba(255, 255, 255, 0.9),
-    rgba(255, 255, 255, 0.5));
+    border-radius: 30px;
+    border: 4px solid rgba(166, 166, 174, 0.9);
     font-size: 1.2rem;
+    color: white;
 
 }
 
 
 #refresh-btn:hover
 {
-    color:red;
-    background-color: rgb(206, 204, 204);
 
+    background-color: rgb(206, 204, 204);
+    color: red;
+    transition: 0.2s;
 }
 
 #validate-btn:hover 
 {
-    width:40%;
+  
     /* box-shadow: -1px -1px 1px black; */
     background-color: rgb(206, 204, 204);
     color: rgb(9, 199, 9);
+    transition: 0.2s;
 }
 
 #round-circle 
@@ -231,10 +237,11 @@ button {
     height: 50px;
     border-radius: 30px;
     background: linear-gradient(to right bottom,
-    rgba(255, 255, 255, 0.9),
-    rgba(255, 255, 255, 0.5));
+    rgba(61, 60, 60, 0.2),
+    rgba(68, 67, 67, 0.1));
     text-align: center;
-    font-size: 2.3rem;
+    font-size: 2.2rem;
+    color: azure;
 }
 
 
@@ -291,8 +298,8 @@ button {
 
 @media only screen and (min-width:1900px) {
     .colors, .color-btn {
-        width: 70px;
-        height: 70px;
+        width: 60px;
+        height: 60px;
     }
     .indice {
         width: 20px;

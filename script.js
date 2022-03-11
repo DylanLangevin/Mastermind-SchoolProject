@@ -203,7 +203,7 @@ vldBtn.onclick = function() {
         } else {
 
             r += 1
-
+            
             roundNumber.innerHTML = `${r}`
 
             userArray = []
@@ -219,7 +219,8 @@ vldBtn.onclick = function() {
                 vldBtn.textContent=''
                 vldBtn.style.transition = '0.5s'
             }
-            document.querySelector(`#line-${r}`).style.border = "1px white solid" 
+            document.querySelector(`#line-${r}`).style.border = "1px grey solid" 
+            document.querySelector(`#line-${r}`).style.borderRadius = "20px" 
             document.querySelector(`#line-${r-1}`).style.border = "0px" 
             return r
         }
@@ -233,4 +234,5 @@ refreshBtn.onclick = function() {
 
 const colorsSelectedList = randomColorsGenerator(colorsList.length, colorsList)
 
-document.querySelector(`#line-${r}`).style.border = "1px white solid" 
+document.querySelector(`#line-${r}`).style.border = "1px grey solid" 
+document.querySelector(`#line-${r}`).style.borderRadius = "20px" 
