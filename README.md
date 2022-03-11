@@ -4,7 +4,8 @@ In my first year at HETIC, my Front-End teacher challenged us to do a Mastermind
 
 Test it ! -----> https://dylanlangevin.github.io/Mastermind-SchoolProject/
 
-![Capture d’écran 2022-02-23 194956](https://user-images.githubusercontent.com/77147936/155388111-e825a9d8-f8b2-4a39-8d7b-6fd7d160b93b.png)
+![Capture d’écran 2022-03-11 182704](https://user-images.githubusercontent.com/77147936/157917301-c4f2176a-f3e0-43c9-8818-ec8fe0011f98.png)
+
 
 
 
@@ -25,13 +26,15 @@ The player has to guess a random combination of four colours among red, blue, gr
 
 
 
-![Capture d’écran 2022-02-23 195041](https://user-images.githubusercontent.com/77147936/155388092-3961d416-032a-4ef9-8ae3-e2d798090be6.png)
+![Capture d’écran 2022-03-11 182758](https://user-images.githubusercontent.com/77147936/157917314-a72909da-ca34-4e97-b07e-de548e5f5446.png)
+
 
 
 In this example, the player has one colour at the right place, two colours at the wrong place, and one colour that doesn't exist in the computer sequence.
 
 
-![Capture d’écran 2022-02-23 200210](https://user-images.githubusercontent.com/77147936/155389335-8328531b-aaae-4029-b3f9-2408fcafd426.png)
+![Capture d’écran 2022-03-11 182845](https://user-images.githubusercontent.com/77147936/157917344-ec0d3a69-7064-4324-9634-4151aa04e438.png)
+
 
 
 
