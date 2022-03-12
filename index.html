@@ -12,12 +12,22 @@
     <section id="top_of_board">
 
         
-        <div id="round-circle">Essais restants : 10</div>
-        <div id="rules-div"><p>Règles</p>
+        <div id="round-circle"><p>Essais restants : 10</p></div>
+        <div id="rules-div"><p>Règles du jeu</p>
             <span>Vous avez dix essais pour trouver la séquence de couleurs de l'ordinateur. <br><br>
             A chaque essai, un indice s'affiche sous forme de petits indicateurs :<br><br>
-            Rouge : une couleur est correcte et bien placé.<br><br>
-            Blanc : une couleur est correcte mais mal placé.<br><br>
+
+            <div class="flex">
+
+                <div class="indice-rules"></div>: une couleur est correcte et bien placé.<br><br>
+            </div>
+
+            <div class="flex">
+
+                <div class="indice-rules2"></div>: une couleur est correcte mais mal placé.<br><br>
+
+            </div>
+            
             Contrairement au vrai jeu, vous avez le choix entre 5 couleurs, et les couleurs peuvent se répéter dans vos séquences et celle de l'ordinateur.
             
         </span>
@@ -174,15 +184,15 @@
             <button class="color-btn" id="green-btn"></button>
             <button class="color-btn" id="yellow-btn"></button>
             <button class="color-btn" id="orange-btn"></button>
-            <button class="color-btn" id="reset-btn">Effacer
+            <button class="color-btn" id="reset-btn"><p>Effacer</p>
             </button>
 
         </div>
 
     </section>
     <section id="under-game-section">
-        <button id="validate-btn">Valider la séquence</button>
-        <button id="refresh-btn">Rejouer une partie</button>
+        <button id="validate-btn"><p>Valider la séquence</p></button>
+        <button id="refresh-btn"><p>Rejouer une partie</p></button>
         
     </section>
 

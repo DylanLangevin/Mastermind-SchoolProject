@@ -257,13 +257,15 @@ document.querySelector(`#line-${r}`).style.transition = "0.3s"
 resetButton.addEventListener("mouseover", function() {
 
     document.querySelector(`#line-${r}`).style.background = "rgba(232, 13, 13, 0.29)";
-
+    resetButton.style.background = "rgba(232, 13, 13, 0.29)"
 });
 
 resetButton.addEventListener("mouseout", function() {
     document.querySelector(`#line-${r}`).style.background = "";
+    resetButton.style.background = ""
 
 });
 
+// rajouter les fonctionnalités smartphone HOVER --> CLICK
 
 

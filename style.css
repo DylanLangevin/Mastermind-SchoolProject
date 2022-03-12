@@ -59,8 +59,9 @@ button {
 }
 
 #rules-div {
-    width:20%;
+    width:max-content;
     height:50px;
+    padding: 0px 30px;
     background: rgb(29, 28, 28);
     border-radius: 30px;
     font-size: 1.2rem;
@@ -368,14 +369,37 @@ button {
 }
 
 
+.flex {
+    display: flex;
 
+
+}
+
+.indice-rules {
+    width: 15px;
+    height: 15px;
+    border-radius: 100px;
+    border: 1px solid rgba(166, 166, 174, 0.9);
+    transform: translateY(8px);
+    margin: 0 10px;
+    background-color: red;
+}
+.indice-rules2 {
+    width: 15px;
+    height: 15px;
+    border-radius: 100px;
+    border: 1px solid rgba(166, 166, 174, 0.9);
+    transform: translateY(8px);
+    margin: 0 10px;
+    background-color: white;
+}
 
 /* ---------------MEDIA QUERIES------------ */
 
-@media only screen and (max-width:1200px){
+@media only screen and (max-width:1350px){
     #board-game {
         width: 50%;
-
+        height: 90%;
 
     }
     #under-game-section {
@@ -390,6 +414,35 @@ button {
         margin:  10px ;
     }
 
+
+
+    #rules-div:hover {
+        width: 50%;
+        animation: div;
+        animation-duration: 1s;
+        transition-timing-function: ease;
+       
+    }
+
+    @keyframes div {
+
+        0% {
+            width: 50%;
+            height: 5%;
+            
+        }
+    
+        
+        100% {
+            width: 50%;
+            height: 49%;
+        }
+    
+    
+    
+    }
+   
+
 }
 
 
@@ -397,8 +450,6 @@ button {
     #board-game {
         width: 60%;
         height: 90%;
-
-
     }
     #under-game-section {
         width: 60%;
@@ -411,6 +462,36 @@ button {
         justify-content: space-between;
         margin:  10px ;
     }
+
+
+
+
+    #rules-div:hover {
+        width: 60%;
+        animation: div;
+        animation-duration: 1s;
+        transition-timing-function: ease;
+       
+    }
+
+    @keyframes div {
+
+        0% {
+            width: 60%;
+            height: 5%;
+            
+        }
+    
+        
+        100% {
+            width: 60%;
+            height: 49%;
+        }
+    
+    
+    
+    }
+   
 }
 
 
@@ -418,23 +499,55 @@ button {
 
 @media only screen and (max-width:480px){
     #board-game {
-        width: 100%;
-        height: 100%;
+        width: 80%;
+        height: 80%;
  
   
     }
 
     #under-game-section {
-        width: 100%;
+        width: 80%;
 
     }
   
     #top_of_board {
-        width: 100%;
+        width: 80%;
         display: flex;
         justify-content: space-between;
         margin:  10px ;
     }
+
+    #rules-div {
+        font-size: 1rem;
+    }
+    #rules-div:hover {
+        width: 50%;
+        animation: div;
+        animation-duration: 1s;
+        transition-timing-function: ease;
+       
+    }
+
+    @keyframes div {
+
+        0% {
+            width: 50%;
+            height: 5%;
+            
+        }
+    
+        
+        100% {
+            width: 50%;
+            height: 49%;
+        }
+    }
+
+    p, button {
+        font-size: 1rem
+    }
+
+   
 }
 
 
