@@ -111,10 +111,11 @@ function setColor(colorLetter) {
 function showResult(win,text) {
 
         let resultDiv = document.createElement("div")
-        resultDiv.style.background="#00000060"
-        resultDiv.style.backdropFilter="blur(10px)"
+        resultDiv.classList.add =("result")
+        resultDiv.style.background="#00000090"
+        resultDiv.style.backdropFilter="blur(5px)"
         resultDiv.style.webkitBackdropFilter= 'blur(5px)'
-        resultDiv.style.width ="50%"
+        resultDiv.style.width ="30%"
         resultDiv.style.height ="30%"
         resultDiv.style.position ="absolute"
         resultDiv.style.margin="0"
@@ -123,24 +124,22 @@ function showResult(win,text) {
         resultDiv.style.flexDirection = "column"
         resultDiv.style.justifyContent = "space-around"
         resultDiv.style.alignItems = "center"
-
-
+        
+        
         let resultText = document.createElement('span')
         resultText.style.fontSize = "300%"
-        resultText.style.backgroundColor = "transparent"
+        resultText.style.color = "white"
 
         if (win) {
 
-            resultText.style.color="rgb(9, 199, 9)"
+            resultDiv.style.border = "8px solid rgba(42, 232, 13, 0.29)"
         } else {
 
-            resultText.style.color="red"
+            resultDiv.style.border = "8px solid rgba(232, 13, 13, 0.29)"
         }
         
         resultText.appendChild(document.createTextNode(text))
         
-
-
         let seqOrdi = document.createElement("div")
         seqOrdi.style.width="100%"
         seqOrdi.style.height= "60px"
@@ -148,11 +147,11 @@ function showResult(win,text) {
         seqOrdi.style.justifyContent = "space-around"
         seqOrdi.style.alignItems = "center"
         seqOrdi.style.backgroundColor = "#ffffff30"
-
-
+        
 
         resultDiv.appendChild(resultText);
         resultDiv.appendChild(seqOrdi);
+
         // Boucle qui affiche les couleurs de l'ordinateur
         for (i=0; i<4; i++) {
 
@@ -163,7 +162,7 @@ function showResult(win,text) {
         }
 
         document.body.appendChild(resultDiv)
-        resultDiv.style.boxShadow="10px 10px 100000px grey"
+        // resultDiv.style.boxShadow="10px 10px 100000px grey"
 
 }
 
@@ -192,7 +191,7 @@ vldBtn.onclick = function() {
         goodSpotGoodColor = verification(userArray)
         if (goodSpotGoodColor == 4 ){
 
-            showResult(true,"GG")
+            showResult(true,"Bravo ! T'es juste trop fort")
             // Modification du bouton "Rejouer" pour qu'il prenne toute la place, et du bouton "Valider" pour qu'il disparaisse
             refreshBtn.style.width = '100%'
             refreshBtn.style.transition = '1s'
@@ -200,29 +199,40 @@ vldBtn.onclick = function() {
             refreshBtn.fontSize='2rem'
             vldBtn.style.width='0'
             vldBtn.textContent=''
+            vldBtn.style.visibility = "hidden"
             vldBtn.border="0px"
             vldBtn.style.transition = '0.5s'
+            
         } else {
 
             r += 1
+            if (r >= 10) {
+
+                roundNumber.innerHTML = `Essai restant : ${11-r}`
+
+            } else {
+
+                roundNumber.innerHTML = `Essais restants : ${11-r}`
+
+            }
             
-            roundNumber.innerHTML = `${r}`
 
             userArray = []
             
             if (r == 11) {
  
-                showResult(false,"Perdu")
+                showResult(false,"Dommage ! Retente ta chance !")
                 refreshBtn.style.width = '100%'
                 refreshBtn.style.transition = '1s'
                 refreshBtn.style.boxShadow = '-2px -2px 5px white'
                 refreshBtn.fontSize='2rem'
                 vldBtn.style.width='0'
                 vldBtn.textContent=''
-                
+                vldBtn.style.visibility = "hidden"
                 vldBtn.border="0px"
                 vldBtn.style.transition = '0.5s'
             }
+
             document.querySelector(`#line-${r}`).style.border = "1px grey solid" 
             document.querySelector(`#line-${r}`).style.borderTopRightRadius = "20px" 
             document.querySelector(`#line-${r}`).style.borderBottomRightRadius = "20px"
@@ -245,13 +255,15 @@ document.querySelector(`#line-${r}`).style.borderBottomRightRadius = "20px"
 document.querySelector(`#line-${r}`).style.transition = "0.3s" 
 
 resetButton.addEventListener("mouseover", function() {
-    document.querySelector(`#line-${r}`).style.background = "rgba(192, 73, 73, 0.3)";
+
+    document.querySelector(`#line-${r}`).style.background = "rgba(232, 13, 13, 0.29)";
 
 });
-
 
 resetButton.addEventListener("mouseout", function() {
     document.querySelector(`#line-${r}`).style.background = "";
 
 });
+
+
 
