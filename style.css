@@ -398,26 +398,31 @@ button {
 
 @media only screen and (max-width:1350px){
     #board-game {
-        width: 50%;
-        height: 90%;
+        width: 30%;
+        height: 80%;
 
     }
     #under-game-section {
-        width: 50%;
+        width: 30%;
+        height:50px;
 
     }
     
     #top_of_board {
-        width: 50%;
+        width: 30%;
         display: flex;
         justify-content: space-between;
         margin:  10px ;
+        height:50px;
     }
 
+    #round-circle, #rules-div, #validate-btn, #refresh-btn {
+        height:50px;
+    } 
 
 
     #rules-div:hover {
-        width: 50%;
+        width: 30%;
         animation: div;
         animation-duration: 1s;
         transition-timing-function: ease;
@@ -427,23 +432,37 @@ button {
     @keyframes div {
 
         0% {
-            width: 50%;
+            width: 30%;
             height: 5%;
             
         }
     
         
         100% {
-            width: 50%;
+            width: 30%;
             height: 49%;
         }
     
     
     
     }
-   
-
+    .colors, .color-btn {
+        width: 30px;
+        height: 30px;
+    }
+    .indice {
+        width: 10px;
+        height: 10px;
+    }
+    p, button {
+        font-size: 1rem
+    }
 }
+
+
+
+
+
 
 
 @media only screen and (max-width:850px){
@@ -487,10 +506,11 @@ button {
             width: 60%;
             height: 49%;
         }
-    
+        
     
     
     }
+    
    
 }
 
