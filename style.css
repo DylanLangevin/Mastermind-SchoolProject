@@ -20,7 +20,7 @@ body {
     background: rgb(29, 28, 28);
     /* background: rgb(247, 242, 242); */
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     flex-direction: column;
     height: 100vh;
@@ -35,33 +35,47 @@ button {
 }
 
 
-#top_of_board {
-    width: 30%;
-    display: flex;
-    justify-content: space-between;
-    margin:  10px ;
+
+/* ------------------------------------------------------ */
+
+p, button {
+    font-size: 0.8rem
 }
 
-#text_on_top_div{
+#top_of_board {
+    width: 30%;
+    max-width: 420px;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
 
-    background-color: rgba(196, 84, 84, 0.3);
 
-    width: 70%;
-    height:50px;
+#round-circle 
+{
+    width: max-content;
+    padding: 0px 15px;
+    height: 50px;
     border-radius: 30px;
-    font-size: 1.2rem;
+    background: rgb(29, 28, 28);
+    text-align: center;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-width: 350px;
-
+    border: 3px solid rgba(166, 166, 174, 0.9)
 }
+/* #round-circle:hover 
+{
+    width: 20%;
+    transition: .2s;
+    
+} */
 
 #rules-div {
     width:max-content;
     height:50px;
-    padding: 0px 30px;
+    padding: 10px;
     background: rgb(29, 28, 28);
     border-radius: 30px;
     font-size: 1.2rem;
@@ -75,15 +89,13 @@ button {
 
 #rules-div span {
     display: none;
-    margin: 10px;
-    padding: 10px;
-    font-size: 1.2rem;
+    margin: 5px;
+    padding: 5px;
+    font-size: 1rem;
     width: 100%;
     height: 100%;
-    
- 
+     
 }
-
 
 #rules-div:hover {
 
@@ -93,6 +105,7 @@ button {
     background: rgb(45, 43, 43);
     position: absolute;
     width: 30%;
+    max-width: 420px;
     height: max-content;
     justify-content: flex-start; 
     align-items: flex-start;
@@ -125,47 +138,50 @@ button {
 
     0% {
         width: 30%;
-        height: 5%;
+        max-width: 420px;
+        height: 10%;
         
     }
 
     
     100% {
         width: 30%;
+        max-width: 420px;
         height: 49%;
     }
-
-
-
 }
 
-#round-circle 
-{
-    width: max-content;
-    padding: 0px 30px;
-    height: 50px;
-    border-radius: 30px;
-    background: rgb(29, 28, 28);
-    text-align: center;
-    font-size: 1.2rem;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 3px solid rgba(166, 166, 174, 0.9)
+.indice-rules {
+    width: 15px;
+    height: 15px;
+    border-radius: 100px;
+    border: 1px solid rgba(166, 166, 174, 0.9);
+    transform: translateY(8px);
+    margin: 0 10px;
+    background-color: red;
 }
-/* #round-circle:hover 
-{
-    width: 20%;
-    transition: .2s;
-    
-} */
+
+.indice-rules2 {
+    width: 15px;
+    height: 15px;
+    border-radius: 100px;
+    border: 1px solid rgba(166, 166, 174, 0.9);
+    transform: translateY(8px);
+    margin: 0 10px;
+    background-color: white;
+}
+
+
+
+
+/* ------------------------------------------------- */
 
 
 
 #board-game {
     
     width: 30%;
+    max-width: 420px;
     height: 80%;
     border-radius: 30px;
     display: flex;
@@ -203,9 +219,9 @@ button {
     align-items: center;
 }
 
-.colors {
-    width: 45px;
-    height: 45px;
+.colors, .color-btn {
+    width: 35px;
+    height: 35px;
     border-radius: 100px;
     border: 3px solid rgba(166, 166, 174, 0.9);
 }
@@ -217,6 +233,26 @@ button {
     flex-direction: column-reverse;
     border-top-right-radius: 20px;
 }
+
+.indice-zone-line {
+    height:20%;
+    border-bottom: 1px rgba(0, 0, 0, 0.33) solid;
+    background-color: transparent;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.indice {
+    width: 10px;
+    height: 10px;
+    border-radius: 100px;
+    margin: auto;
+    border: 1px solid rgba(166, 166, 174, 0.9);
+
+}
+
+
 
 #color-picking-zone{
     flex-basis: 10%;
@@ -269,11 +305,6 @@ button {
 
 
 
-.color-btn {
-    width: 45px;
-    height: 45px;
-    border-radius: 100px;
-}
 
 
 
@@ -295,28 +326,11 @@ button {
 
 
 
-.indice-zone-line {
-    height:20%;
-    border-bottom: 1px rgba(0, 0, 0, 0.33) solid;
-    background-color: transparent;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-
-
-}
-
-.indice {
-    width: 15px;
-    height: 15px;
-    border-radius: 100px;
-    margin: auto;
-    border: 1px solid rgba(166, 166, 174, 0.9);
-
-}
 
 #under-game-section {
     margin: 10px 0;
     width: 30%;
+    max-width: 420px;
     display: flex;
     justify-content: space-between;
     background-color: transparent;
@@ -325,10 +339,10 @@ button {
 #validate-btn
 {
     width:  50%;
-    height: 60px;
+
     border-radius: 30px;
     border: 3px solid rgba(166, 166, 174, 0.9);
-    font-size: 1.2rem;
+
     color: white;
     box-shadow: inset -3px -3px 7px #ffffff33,   2px 2px 10px rgba(5, 1, 1,0.80);
 }
@@ -336,10 +350,10 @@ button {
 #refresh-btn
 {
     width: 50%;
-    height: 60px;
+    height: 50px;
     border-radius: 30px;
     border: 3px solid rgba(166, 166, 174, 0.9);
-    font-size: 1.2rem;
+
     color: white;
     box-shadow: inset -3px -3px 7px #ffffff33,   2px 2px 10px rgba(5, 1, 1,0.80);
 
@@ -364,35 +378,13 @@ button {
 }
 
 
-.result {
-    transition: 1s;
-}
-
 
 .flex {
     display: flex;
 
-
 }
 
-.indice-rules {
-    width: 15px;
-    height: 15px;
-    border-radius: 100px;
-    border: 1px solid rgba(166, 166, 174, 0.9);
-    transform: translateY(8px);
-    margin: 0 10px;
-    background-color: red;
-}
-.indice-rules2 {
-    width: 15px;
-    height: 15px;
-    border-radius: 100px;
-    border: 1px solid rgba(166, 166, 174, 0.9);
-    transform: translateY(8px);
-    margin: 0 10px;
-    background-color: white;
-}
+
 
 /* ---------------MEDIA QUERIES------------ */
 
@@ -404,7 +396,7 @@ button {
     }
     #under-game-section {
         width: 30%;
-        height:50px;
+     
 
     }
     
@@ -412,12 +404,11 @@ button {
         width: 30%;
         display: flex;
         justify-content: space-between;
-        margin:  10px ;
-        height:50px;
+   
     }
 
     #round-circle, #rules-div, #validate-btn, #refresh-btn {
-        height:50px;
+        height:40px;
     } 
 
 
@@ -442,21 +433,17 @@ button {
             width: 30%;
             height: 49%;
         }
-    
-    
-    
     }
+
     .colors, .color-btn {
         width: 30px;
         height: 30px;
     }
     .indice {
-        width: 10px;
-        height: 10px;
+        width: 8px;
+        height: 8px;
     }
-    p, button {
-        font-size: 1rem
-    }
+    
 }
 
 
@@ -467,16 +454,16 @@ button {
 
 @media only screen and (max-width:850px){
     #board-game {
-        width: 60%;
+        width: 50%;
         height: 90%;
     }
     #under-game-section {
-        width: 60%;
+        width: 50%;
 
     }
 
     #top_of_board {
-        width: 60%;
+        width: 50%;
         display: flex;
         justify-content: space-between;
         margin:  10px ;
@@ -486,7 +473,7 @@ button {
 
 
     #rules-div:hover {
-        width: 60%;
+        width: 50%;
         animation: div;
         animation-duration: 1s;
         transition-timing-function: ease;
@@ -496,14 +483,14 @@ button {
     @keyframes div {
 
         0% {
-            width: 60%;
+            width: 50%;
             height: 5%;
             
         }
     
         
         100% {
-            width: 60%;
+            width: 50%;
             height: 49%;
         }
         
@@ -511,13 +498,24 @@ button {
     
     }
     
+    .colors, .color-btn {
+        width: 30px;
+        height: 30px;
+    }
+    .indice {
+        width: 8px;
+        height: 8px;
+    }
+    p, button {
+        font-size: 0.8rem
+    }
    
 }
 
 
 /* -------------------------- mobile ------------------------------------- */
 
-@media only screen and (max-width:480px){
+@media only screen and (max-width:500px){
     #board-game {
         width: 80%;
         height: 80%;
@@ -541,7 +539,7 @@ button {
         font-size: 1rem;
     }
     #rules-div:hover {
-        width: 50%;
+        width: 80%;
         animation: div;
         animation-duration: 1s;
         transition-timing-function: ease;
@@ -551,20 +549,20 @@ button {
     @keyframes div {
 
         0% {
-            width: 50%;
-            height: 5%;
+            width: 80%;
+            height: 10%;
             
         }
     
         
         100% {
-            width: 50%;
+            width: 80%;
             height: 49%;
         }
     }
 
     p, button {
-        font-size: 1rem
+        font-size: 0.8rem
     }
 
    
@@ -573,15 +571,15 @@ button {
 
 /* Wide screen */
 
-@media only screen and (min-width:1900px) {
+/* @media only screen and (min-width:1350px) {
     .colors, .color-btn {
-        width: 50px;
-        height: 50px;
+        width: 35px;
+        height: 35px;
     }
     .indice {
-        width: 15px;
-        height: 15px;
+        width: 10px;
+        height: 10px;
     }
     
-}
+} */
 

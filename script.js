@@ -115,7 +115,7 @@ function showResult(win,text) {
         resultDiv.style.background="#00000090"
         resultDiv.style.backdropFilter="blur(5px)"
         resultDiv.style.webkitBackdropFilter= 'blur(5px)'
-        resultDiv.style.width ="30%"
+        resultDiv.style.width ="70%"
         resultDiv.style.height ="30%"
         resultDiv.style.position ="absolute"
         resultDiv.style.margin="0"
@@ -127,7 +127,7 @@ function showResult(win,text) {
         
         
         let resultText = document.createElement('span')
-        resultText.style.fontSize = "300%"
+        
         resultText.style.color = "white"
 
         if (win) {
@@ -191,12 +191,12 @@ vldBtn.onclick = function() {
         goodSpotGoodColor = verification(userArray)
         if (goodSpotGoodColor == 4 ){
 
-            showResult(true,"Bravo ! T'es juste trop fort")
+            showResult(true,"Bravo ! T'es juste trop fort(e) !")
             // Modification du bouton "Rejouer" pour qu'il prenne toute la place, et du bouton "Valider" pour qu'il disparaisse
             refreshBtn.style.width = '100%'
             refreshBtn.style.transition = '1s'
             refreshBtn.style.boxShadow = '-2px -2px 5px white'
-            refreshBtn.fontSize='2rem'
+            refreshBtn.fontSize='1rem'
             vldBtn.style.width='0'
             vldBtn.textContent=''
             vldBtn.style.visibility = "hidden"
@@ -225,7 +225,7 @@ vldBtn.onclick = function() {
                 refreshBtn.style.width = '100%'
                 refreshBtn.style.transition = '1s'
                 refreshBtn.style.boxShadow = '-2px -2px 5px white'
-                refreshBtn.fontSize='2rem'
+                refreshBtn.fontSize='1rem'
                 vldBtn.style.width='0'
                 vldBtn.textContent=''
                 vldBtn.style.visibility = "hidden"
