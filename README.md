@@ -2,7 +2,7 @@ Responsive Mastermind – HTML/CSS/JS
 
 In my first year at HETIC, my Front-End teacher challenged us to do a Mastermind, based on our skills in Front-end developpement.
 
-Test it ! -----> https://dylanlangevin.github.io/Mastermind-SchoolProject/target="_blank"
+Test it ! -----> https://dylanlangevin.github.io/Mastermind-SchoolProject/
 
 ![Capture d’écran 2022-03-11 182704](https://user-images.githubusercontent.com/77147936/157917736-afe47fe0-3ac0-450c-9c6e-322c7c191760.png)
 
