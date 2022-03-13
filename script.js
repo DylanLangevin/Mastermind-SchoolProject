@@ -14,7 +14,7 @@ const resetButton = document.getElementById("reset-btn")
 const vldBtn = document.getElementById('validate-btn')
 const refreshBtn = document.getElementById('refresh-btn')
 const roundNumber = document.getElementById('round-circle')
-const rulesHover = document.getElementById('rules-div')
+const rulesDiv = document.getElementById('rules-div')
 
 let userArray = []
 let r = 1
@@ -102,6 +102,7 @@ function setColor(colorLetter) {
         for (i = 1; i <= userArray.length; i++) {
             
             document.querySelector(`#line-${r} .colors:nth-child(${i})`).classList.add(userArray[i-1])
+            // document.querySelector(`#line-${r} .colors:nth-child(${i})`).
         }
 
     }
@@ -129,6 +130,7 @@ function showResult(win,text) {
         let resultText = document.createElement('span')
         
         resultText.style.color = "white"
+        resultText.style.textAlign = "center"
 
         if (win) {
 
@@ -209,10 +211,12 @@ vldBtn.onclick = function() {
             if (r >= 10) {
 
                 roundNumber.innerHTML = `Essai restant : ${11-r}`
+                roundNumber.style.fontSize = "0.8rem"
 
             } else {
 
                 roundNumber.innerHTML = `Essais restants : ${11-r}`
+                roundNumber.style.fontSize = "0.8rem"
 
             }
             
@@ -266,6 +270,15 @@ resetButton.addEventListener("mouseout", function() {
 
 });
 
-// rajouter les fonctionnalités smartphone HOVER --> CLICK
+
+rulesDiv.onclick = function() {
+
+    rulesDiv.classList.toggle('rules_clicked');
+    
+     
+
+};
+
+
 
 
